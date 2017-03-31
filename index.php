@@ -1,11 +1,11 @@
 <?php
-  $company = 'Movie Time';
+  $company = 'Book Time';
   $title = 'Arrays';
   $topic = 'Books';
   $franchise = 'Harry Potter';
 
   // Let's create a simple array
-  $movies = array(
+  $books = array(
     'The Phantom Menace',
     'Attack of the Clones',
     'Revenge of the Sith',
@@ -17,7 +17,7 @@
   );
 
   // Let's create an associative array
-  $movieYears = array(
+  $booksYears = array(
     'The Phantom Menace' => 1999,
     'Attack of the Clones' => 2002,
     'Revenge of the Sith' => 2005,
@@ -28,8 +28,8 @@
     'Rogue One' => 2016
   );
 
-  // Count how many items are stored in the array $movies
-  $moviesLength = count($movies);
+  // Count how many items are stored in the array $books
+  $booksLength = count($books);
 
 ?>
 <!DOCTYPE html>
@@ -42,26 +42,26 @@
   <body>
     <main class="container py-4">
       <h1><?php echo $topic; ?>: <em><?php echo $franchise; ?></em></h1>
-      <p>There are <?php echo $moviesLength; ?> movies in the <em><?php echo $franchise; ?></em> franchise.</p>
+      <p>There are <?php echo $booksLength; ?> books in the <em><?php echo $franchise; ?></em> franchise.</p>
       <ul class="list-group pb-4" style="max-width: 20rem;">
         <?php
-          foreach ($movies as $movie) {
-              echo '<li class="list-group-item">'.$movie.'</li>';
+          foreach ($books as $book) {
+              echo '<li class="list-group-item">'.$book.'</li>';
           }
-          // Let's unset $movie so it can be used again later
-          unset($movie);
+          // Let's unset $book so it can be used again later
+          unset($book);
         ?>
       </ul>
-      <p>The best <em><?php echo $franchise; ?></em> movie is <em><?php echo $movies[4]; ?></em>.</p>
+      <p>The best <em><?php echo $franchise; ?></em> book is <em><?php echo $books[4]; ?></em>.</p>
       <hr>
       <h2 class="h5 mb-4">The <em><?php echo $franchise; ?></em> books were released in the following years:</h2>
       <ul class="list-group pb-4" style="max-width: 20rem;">
         <?php
-          foreach ($movieYears as $movie => $year) {
-              echo '<li class="list-group-item justify-content-between"><em>'.$movie.'</em> '.$year.'</li>';
+          foreach ($booksYears as $book => $year) {
+              echo '<li class="list-group-item justify-content-between"><em>'.$book.'</em> '.$year.'</li>';
           }
-          // Let's unset $movie so it can be used again later
-          unset($movie);
+          // Let's unset $book so it can be used again later
+          unset($book);
         ?>
       </ul>
     </main>
