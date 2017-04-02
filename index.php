@@ -6,26 +6,24 @@
 
   // Let's create a simple array
   $books = array(
-    'The Phantom Menace',
-    'Attack of the Clones',
-    'Revenge of the Sith',
-    'A New Hope',
-    'The Empire Strikes Back',
-    'Return of the Jedi',
-    'The Force Awakens',
-    'Rogue One'
+    'Harry Potter and the Sorcerer&#8217s Stone',
+    'Harry Potter and the Chamber of Secrets',
+    'Harry Potter and the Prisoner of Azkaban',
+    'Harry Potter and the Goblet of Fire',
+    'Harry Potter and the Order of the Phoenix',
+    'Harry Potter and the Half-Blood Prince',
+    'Harry Potter and the Deathly Hallows'
   );
 
   // Let's create an associative array
   $booksYears = array(
-    'The Phantom Menace' => 1999,
-    'Attack of the Clones' => 2002,
-    'Revenge of the Sith' => 2005,
-    'A New Hope' => 1977,
-    'The Empire Strikes Back' => 1980,
-    'Return of the Jedi' => 1983,
-    'The Force Awakens' => 2015,
-    'Rogue One' => 2016
+    'Harry Potter and the Sorcerer&#8217s Stone' => 1998,
+    'Harry Potter and the Chamber of Secrets' => 1999,
+    'Harry Potter and the Prisoner of Azkaban' => 1999,
+    'Harry Potter and the Goblet of Fire' => 2000,
+    'Harry Potter and the Order of the Phoenix' => 2003,
+    'Harry Potter and the Half-Blood Prince' => 2005,
+    'Harry Potter and the Deathly Hallows' => 2007
   );
 
   // Count how many items are stored in the array $books
@@ -43,7 +41,7 @@
     <main class="container py-4">
       <h1><?php echo $topic; ?>: <em><?php echo $franchise; ?></em></h1>
       <p>There are <?php echo $booksLength; ?> books in the <em><?php echo $franchise; ?></em> franchise.</p>
-      <ul class="list-group pb-4" style="max-width: 20rem;">
+      <ul class="list-group pb-4" style="max-width: 23rem;">
         <?php
           foreach ($books as $book) {
               echo '<li class="list-group-item">'.$book.'</li>';
@@ -55,7 +53,7 @@
       <p>The best <em><?php echo $franchise; ?></em> book is <em><?php echo $books[4]; ?></em>.</p>
       <hr>
       <h2 class="h5 mb-4">The <em><?php echo $franchise; ?></em> books were released in the following years:</h2>
-      <ul class="list-group pb-4" style="max-width: 20rem;">
+      <ul class="list-group pb-4" style="max-width: 30rem;">
         <?php
           foreach ($booksYears as $book => $year) {
               echo '<li class="list-group-item justify-content-between"><em>'.$book.'</em> '.$year.'</li>';
