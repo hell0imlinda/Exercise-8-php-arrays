@@ -12,7 +12,7 @@
     'Harry Potter and the Goblet of Fire',
     'Harry Potter and the Order of the Phoenix',
     'Harry Potter and the Half-Blood Prince',
-    'Harry Potter and the Deathly Hallows test'
+    'Harry Potter and the Deathly Hallows'
   );
 
   // Let's create an associative array
