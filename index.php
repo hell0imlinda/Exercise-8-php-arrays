@@ -51,6 +51,7 @@
         ?>
       </ul>
       <p>The best <em><?php echo $franchise; ?></em> book is <em><?php echo $books[4]; ?></em>.</p>
+      <p>The best <em><?php echo $franchise; ?></em> movie is <em><?php echo $books[6]; ?></em>.</p>
       <hr>
       <h2 class="h5 mb-4">The <em><?php echo $franchise; ?></em> books were released in the following years:</h2>
       <ul class="list-group pb-4" style="max-width: 30rem;">
