@@ -1,6 +1,6 @@
 <?php
   $company = 'Book Time';
-  $title = 'Arrays';
+  $title = 'Harry Potter Arrays';
   $topic = 'Books';
   $franchise = 'Harry Potter';
 
@@ -12,7 +12,7 @@
     'Harry Potter and the Goblet of Fire',
     'Harry Potter and the Order of the Phoenix',
     'Harry Potter and the Half-Blood Prince',
-    'Harry Potter and the Deathly Hallows'
+    'Harry Potter and the Deathly Hallows test'
   );
 
   // Let's create an associative array
